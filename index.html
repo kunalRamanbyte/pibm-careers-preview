@@ -43,6 +43,59 @@ html{scrollbar-gutter:stable}body.gallery-open{overflow:hidden}.person-art{displ
 @media(max-width:360px){.hero-actions .btn{font-size:12px}.faculty-preview{gap:6px}.faculty-name{font-size:12px;padding-inline:6px}.faculty-domain{font-size:12px;padding-inline:6px}.voice-controls{gap:6px}.voice-index{margin-right:0}.voice-controls .carousel-nav{gap:5px}.voice-dot{width:44px}.gallery-header h2{font-size:22px}.gallery-header .eyebrow{font-size:9px}}
 
 .hero-visual figcaption{max-width:calc(100% - 24px)}.hero-visual figcaption strong{font-size:14px}.hero-visual figcaption .photo-cta{font-size:12px}@media(max-width:600px){.hero-visual figcaption strong{font-size:12px}.hero-visual figcaption .photo-cta{font-size:12px}}
+
+/* Colour polish: navy and gold foundations with soft teal and lavender accents. */
+:root{--teal:#17716f;--lavender:#7055a3;--warm-white:#fffcf6}
+.hero{background:radial-gradient(ellipse at 88% 18%,#247b795e,transparent 55%),radial-gradient(ellipse at 12% 100%,#355b8d66,transparent 58%),linear-gradient(118deg,#082a4d,#103f6a)}
+.hero-visual:before{border-color:#e4bc7080;background:#d6aa5312}
+.hero-photo-trigger{box-shadow:0 18px 42px #031a3140}
+.hero-visual figcaption{background:linear-gradient(110deg,#092d54f2,#12565bef);border-color:#b5dfd44d}
+.btn:not(.btn-outline):not(.btn-quiet):not(.btn-light){background:linear-gradient(110deg,#e4bb6b,#d6aa53);box-shadow:0 3px 10px #b1873a15}
+.btn:not(.btn-outline):not(.btn-quiet):not(.btn-light):hover{background:linear-gradient(110deg,#edca82,#e0b565);box-shadow:0 6px 18px #b1873a25}
+.openings{background:radial-gradient(ellipse at 100% 0,#e8f4f0,transparent 58%),linear-gradient(135deg,var(--warm-white),#f2f6fc)}
+.job-card{background:linear-gradient(155deg,var(--team-soft),#fff 54%);border-color:#d5e1ee;border-top-color:var(--team-accent)}
+.job-card[data-category=admin]{border-color:#cce4dd;border-top-color:var(--team-accent)}
+.job-card[data-category=specialist]{border-color:#eadfc8;border-top-color:var(--team-accent)}
+.job-card-top .team-visual{background:var(--team-accent);color:#fff;box-shadow:0 4px 10px #092d5410}
+.job-card .btn-outline{background:var(--team-soft);border-color:var(--team-accent);color:var(--team-accent)}
+.job-card .btn-outline:hover{background:var(--team-accent);color:#fff}
+.filter-btn[data-filter=faculty]{background:#edf3fc;border-color:#cddced;color:#245f96}
+.filter-btn[data-filter=admin]{background:#e9f6f2;border-color:#c4e1d8;color:#17716f}
+.filter-btn[data-filter=specialist]{background:#faf2df;border-color:#e7d7b0;color:#805914}
+.filter-btn[data-filter=faculty].active{background:#245f96;border-color:#245f96;color:#fff}
+.filter-btn[data-filter=admin].active{background:#17716f;border-color:#17716f;color:#fff}
+.filter-btn[data-filter=specialist].active{background:#805914;border-color:#805914;color:#fff}
+.filter-btn:hover:not(.active){box-shadow:inset 0 0 0 1px currentColor}
+.why-section{background:radial-gradient(ellipse at 100% 5%,#237e7959,transparent 62%),radial-gradient(ellipse at 0 100%,#78613d33,transparent 54%),linear-gradient(115deg,#082a4d,#103f6a)}
+.why-section .benefit:first-child .benefit-icon{background:#bbabed24;color:#d4c6ff}
+.why-section .benefit:nth-child(2) .benefit-icon{background:#74d4c32b;color:#a1ecdf}
+.why-section .benefit:nth-child(3) .benefit-icon{background:#f1cc8026;color:#f1cc80}
+.faculty-card:nth-child(1){background:#aaa0e41a;border-color:#c5b9ed66}
+.faculty-card:nth-child(2){background:#71c7b91a;border-color:#94d9ca66}
+.faculty-card:nth-child(3){background:#e4bc701a;border-color:#e4bc7066}
+.faculty-card:hover{border-color:#e4bc70}
+.voices-section{background:radial-gradient(ellipse at 0 20%,#f2e9fd,transparent 60%),linear-gradient(115deg,#f7f2fc,#fff8ec)}
+.voices-intro .eyebrow{color:var(--lavender)}
+.voices-track{border-color:#ded5e9;box-shadow:0 12px 32px #7055a30a}
+.voice-card{background:linear-gradient(130deg,#f0f5ff,#fff 65%)}
+.voice-card:nth-child(2){background:linear-gradient(130deg,#edf8f4,#fff 65%)}
+.voice-card:nth-child(3){background:linear-gradient(130deg,#fff4df,#fff 65%)}
+.voice-dot[aria-pressed=true]:after{background:var(--lavender)}
+.voices-section .circle-btn:not(:disabled){color:var(--lavender);border-color:#cdbfdf}
+.voices-section .circle-btn:hover:not(:disabled){background:#ede6f7;border-color:var(--lavender)}
+.apply-section{background:radial-gradient(ellipse at 10% 30%,#e4f4ee,transparent 60%),linear-gradient(125deg,#f0f7f5,#f2f1fb)}
+.apply-intro>.eyebrow{color:#14645f}
+.process-num{box-shadow:0 0 0 4px #edf6f2}
+.process-list li:nth-child(2) .process-num{background:#d4ede4;color:#21645b}
+.process-list li:nth-child(3) .process-num{background:#e6dff5;color:#64458e}
+.application{border-color:#d4dfdf;box-shadow:0 16px 44px #174e7d0c}
+.form-top{background:linear-gradient(115deg,#eff7f5,#f5f2fb);border-bottom-color:#dde7e4}
+.form-progress li[aria-current=step]{border-color:#17716f;color:#14645f}
+.form-progress li.completed{border-color:#79b6a1;color:#32654b}
+.chosen-role{background:#edf7f3;border-color:#bfded0}
+.upload-control{background:#f1f8f5;border-color:#74a597}
+.gallery-header{background:linear-gradient(110deg,#eff7f5,#f6f2fb)}
+.site-footer{border-top:3px solid #d6aa53;border-image:linear-gradient(90deg,#d6aa53,#6aaea5,#9280bb) 1}
 </style>
 <!-- Embedded Inter font license:
 Copyright 2020 The Inter Project Authors (https://github.com/rsms/inter)
